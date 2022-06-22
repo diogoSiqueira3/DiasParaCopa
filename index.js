@@ -1,10 +1,16 @@
-require('dotenv').config();
-
+const dotenv = require('dotenv')
 const Twit = require("twit");
-const config = require('./config');
 const moment = require("moment");
 
-const client = new Twit(config);
+dotenv.config({path:'./config.env'});
+
+const client = new Twit({
+    timeout_ms: 60 * 1000,
+    consumer_key: process.env.CONSUMER_KEY,
+    consumer_secret: process.env.CONSUMER_SECRET,
+    access_token: process.env.ACCESS_TOKEN,
+    access_token_secret: process.env.ACCESS_TOKEN_SECRET,
+});
 
 let aCada24h = 1000*60*1440
 
