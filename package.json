@@ -8,16 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/diogoSiqueira3/DiasParaCopa22.git"
+    "url": "git+https://github.com/diogoSiqueira3/DiasParaCopa.git"
   },
   "author": "DiogoSiqueira3",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/diogoSiqueira3/DiasParaCopa22/issues"
+    "url": "https://github.com/diogoSiqueira3/DiasParaCopa/issues"
   },
-  "homepage": "https://github.com/diogoSiqueira3/DiasParaCopa22#readme",
+  "homepage": "https://twitter.com/DiasParaCopa22",
   "dependencies": {
-    "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "moment": "^2.29.3",
     "twit": "^2.2.11"
