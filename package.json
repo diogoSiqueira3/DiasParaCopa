@@ -17,7 +17,6 @@
   },
   "homepage": "https://twitter.com/DiasParaCopa22",
   "dependencies": {
-    "dotenv": "^16.0.1",
     "moment": "^2.29.3",
     "twit": "^2.2.11"
   }
