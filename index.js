@@ -11,7 +11,7 @@ access_token_secret: process.env.ACCESS_TOKEN_SECRET,
 exports.handler = async () => { 
     
     let hoje = moment(new Date());
-    let inicioCopa = moment("21/11/2022", "DD/MM/YYYY");
+    let inicioCopa = moment("08/06/2026", "DD/MM/YYYY");
     let diferencaDias; 
     let tweet = null;
     
@@ -22,11 +22,11 @@ exports.handler = async () => {
     }
     
     if (diferencaDias > 1) {
-        tweet = `Estamos a ${diferencaDias} dias para o início da copa do mundo de 2022!`;
+        tweet = `Estamos a ${diferencaDias} dias para o início da copa do mundo de 2026!`;
     } else if (diferencaDias === 1) {
-        tweet = 'Amanhã começa a copa do mundo de 2022!';
+        tweet = 'Amanhã começa a copa do mundo de 2026!';
     } else if (diferencaDias === 0) {
-        tweet = 'Hoje começa a copa do mundo de 2022!';
+        tweet = 'Hoje começa a copa do mundo de 2026!';
     }
     
     if (tweet) {
